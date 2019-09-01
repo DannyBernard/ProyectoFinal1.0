@@ -11,23 +11,17 @@
                     <label for="IdTextBox" class="col-md-3 control-label input-sm">Id: </label>
                     <div class="col-md-1 col-sm-2 col-xs-4">
                         <asp:TextBox ID="IdTextBox" runat="server" ReadOnly="false" placeholder="0" class="form-control input-sm"></asp:TextBox>
+						
                     </div>
-                    <div class="col-md-1 col-sm-2 col-xs-4">
-                       <asp:LinkButton ID="BuscarLinkButton" runat="server" CssClass="btn btn-primary" OnClick="BuscarLinkButton_Click" ><span class="glyphicon glyphicon-search"></span> Buscar</asp:LinkButton>  
+                      <asp:LinkButton ID="BuscarLinkButton" runat="server" CssClass="btn btn-primary" OnClick="BuscarLinkButton_Click" ><span class="glyphicon glyphicon-search"></span> Buscar</asp:LinkButton>  
                     </div>
                 </div>
 				<%--Nombre--%>
                 <div class="form-group">
                     <label for="DescripcionTextBox" class="col-md-3 control-label input-sm">Nombre</label>
                     <div class="col-md-8">
-                        <asp:TextBox ID="NombreTextBox" runat="server" 
-                            Class="form-control input-sm"></asp:TextBox>
-						<%--<%-- <%--  <asp:RequiredFieldValidator ID="RFVDescripcion" runat="server" MaxLength="200" 
-                            ControlToValidate="DescripcionTextBox" 
-                            ErrorMessage="Campo Descripcion obligatorio" ForeColor="Red" 
-                            Display="Dynamic" SetFocusOnError="True" 
-                            ToolTip="Campo Descripcion obligatorio">Por favor llenar el campo Descripcion
-                      </asp:RequiredFieldValidator>--%>
+                        <asp:TextBox ID="NombreTextBox" runat="server" Class="form-control input-sm"></asp:TextBox>
+						<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="El campo edad es obligatorio" ControlToValidate="NombreTextBox" ForeColor="Red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
 				<%--User--%>
@@ -35,8 +29,8 @@
                     <label for="UserTextBox" class="col-md-3 control-label input-sm">User</label>
                     <div class="col-md-8">
                         <asp:TextBox ID="UserTextBox" runat="server" Class="form-control input-sm"></asp:TextBox>
-						<%--  <asp:RequiredFieldValidator ID="RFV_MontoTextBox" runat="server" ControlToValidate="PresupuestoTextBox" ErrorMessage="Campo presupuesto obligatorio" ForeColor="Red" Display="Dynamic" SetFocusOnError="True" ToolTip="Campo Monto obligatorio">Por favor llenar el campo Monto</asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="REV_MontoTextBox" runat="server" ControlToValidate="PresupuestoTextBox" ErrorMessage="No se permiten caracteres en el presupuesto" ForeColor="Red" Dynamic="true" SetFocusOnError="true" ValidationExpression="^(\d|-)?(\d|,)*\.?\d*$">Solo se permiten Números. </asp:RegularExpressionValidator>--%>
+<%--						<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="El campo edad es obligatorio" ControlToValidate="UserTextBox" ForeColor="Red"></asp:RequiredFieldValidator>--%>
+
                     </div>
                 </div>
 				<%--PassWord--%>
@@ -44,8 +38,8 @@
                     <label for="PasswordTextBox" class="col-md-3 control-label input-sm">Password</label>
                     <div class="col-md-8">
                         <asp:TextBox ID="PasswordTextBox" runat="server" Class="form-control input-sm"></asp:TextBox>
-						<%--  <asp:RequiredFieldValidator ID="RFV_MontoTextBox" runat="server" ControlToValidate="PresupuestoTextBox" ErrorMessage="Campo presupuesto obligatorio" ForeColor="Red" Display="Dynamic" SetFocusOnError="True" ToolTip="Campo Monto obligatorio">Por favor llenar el campo Monto</asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="REV_MontoTextBox" runat="server" ControlToValidate="PresupuestoTextBox" ErrorMessage="No se permiten caracteres en el presupuesto" ForeColor="Red" Dynamic="true" SetFocusOnError="true" ValidationExpression="^(\d|-)?(\d|,)*\.?\d*$">Solo se permiten Números. </asp:RegularExpressionValidator>--%>
+<%--			<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="El campo edad es obligatorio" ControlToValidate="PasswordTextBox" ForeColor="Red"></asp:RequiredFieldValidator>--%>
+						
                     </div>
                 </div>
             
