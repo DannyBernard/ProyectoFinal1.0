@@ -27,9 +27,9 @@ namespace Entities
 
         public Usuario(int usuarioID, string nombres, string user, string password, bool tipoUsuario)
         {
-            UsuarioID = usuarioID;
-            Nombres = nombres;
-            User = user;
+            this.UsuarioID = usuarioID;
+            this.Nombres = nombres;
+            this.User = user;
             this.password = password;
             TipoUsuario = tipoUsuario;
         }
